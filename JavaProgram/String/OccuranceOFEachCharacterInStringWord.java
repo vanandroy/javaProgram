@@ -1,6 +1,6 @@
 package String;
 
-public class OccuranceOFEachCharacterInString {
+public class OccuranceOFEachCharacterInStringWord {
 	public static void main(String[] args) {
 		String s="Kannada";// k=1,a=3,n=2,d=1
 //		String st=s.toLowerCase();

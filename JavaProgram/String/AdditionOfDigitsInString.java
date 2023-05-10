@@ -2,7 +2,7 @@ package String;
 
 public class AdditionOfDigitsInString {
 	public static void main(String[] args) {
-		String st="b2c1d5";
+		String st="5b2c11d52";
 		int sum=0;
 		for(int i=0;i<st.length();i++) {
 			if(st.charAt(i)>='0' && st.charAt(i)<='9') {

@@ -2,7 +2,7 @@ package String;
 
 public class CountNumberOfVowelInString {
 	public static void main(String[] args) {
-		String st="Engineer";
+		String st="Engineer";//e i e e : 4
 		String str=st.toLowerCase();
 		char[] ch=str.toCharArray();
 		int vo=0;
@@ -14,5 +14,4 @@ public class CountNumberOfVowelInString {
 		}
 		System.out.println(": "+vo);
 	}
-
 }

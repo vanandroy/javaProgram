@@ -1,30 +1,31 @@
 package Number;
 
-import java.util.Scanner;
-
 public class DemoNumber {
-	static boolean isXylemPholemNumber(int x) {
-		int es=0,ms=0,temp=x;
-		do {
-		int d=x%10;
-			if(x<10||temp==x) {
-				es=es+d;
-			}else {
-				ms=ms+d;
-			}
-			x=x/10;
-		}while(x!=0);
-		return es==ms;
-	}
-	
 	public static void main(String[] args) {
-		int n=1234;
-		boolean st=isXylemPholemNumber(n);
-		if(st) {
-			System.out.println(n+" is Xylem number");
+		int[] a= {1,2,3};
+		int[] b= {4,5,6,7};
+		int[] c=new int[a.length+b.length];
+		int i=0,k=0;
+		while(i<a.length&& i<b.length) {
+			c[k]=b[i];
+			k++;
+			c[k]=a[i];
+			i++;
+			k++;
 		}
-		else {
-			System.out.println(n+" is not Pholem number");
+		while(i<b.length)
+		{
+			c[k]=b[i];
+			k++;
+			i++;
 		}
-}
+		while(i<a.length) {
+			c[k]=a[i];
+			k++;
+			i++;
+		}
+		for(int j=0;j<c.length;j++) {
+			System.out.print(c[j]+" ");
+		}
+	}
 }

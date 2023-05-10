@@ -4,7 +4,7 @@ import java.util.LinkedHashSet;
 
 public class CountNumberOfVowelsInAStringWtDuplicates {
 	public static void main(String[] args) {
-		String st="Engineer";
+		String st="Engineer";//e i : 2
 		String str=st.toLowerCase();
 		char[] c=str.toCharArray();
 		LinkedHashSet<Character> set=new LinkedHashSet<Character>();
